@@ -56,7 +56,7 @@ func _physics_process(delta):
 	var f_input = Input.get_action_strength("move_backward") - Input.get_action_strength("move_forward")
 	var h_input = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	direction = Vector3(h_input, 0, f_input).rotated(Vector3.UP, h_rot).normalized()
-	
+
 	if is_on_floor():
 		snap = -get_floor_normal()
 		accel = ACCEL_DEFAULT
@@ -65,14 +65,14 @@ func _physics_process(delta):
 		snap = Vector3.DOWN
 		accel = ACCEL_AIR
 		gravity_vec += Vector3.DOWN * gravity * delta
-		
+
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		snap = Vector3.ZERO
 		gravity_vec = Vector3.UP * jump
-	
+
 	velocity = velocity.linear_interpolate(direction * speed, accel * delta)
 	movement = velocity + gravity_vec
-	
+
 	move_and_slide_with_snap(movement, snap, Vector3.UP)
 	if translation.y < -5:
 		get_tree().change_scene("res://YouLostMenu.tscn")

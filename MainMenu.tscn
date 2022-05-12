@@ -30,9 +30,9 @@ margin_bottom = 600.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 margin_left = 32.0
-margin_top = 101.0
+margin_top = 40.0
 margin_right = 991.0
-margin_bottom = 498.0
+margin_bottom = 559.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_right = 959.0
@@ -47,19 +47,20 @@ text = "Parkour Masters"
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 157.0
 margin_right = 959.0
-margin_bottom = 397.0
+margin_bottom = 519.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
-margin_left = 298.0
-margin_right = 660.0
-margin_bottom = 240.0
+margin_left = 197.0
+margin_right = 762.0
+margin_bottom = 362.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
-margin_right = 362.0
+margin_right = 565.0
 margin_bottom = 118.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer"]
-margin_right = 362.0
+margin_left = 101.0
+margin_right = 463.0
 margin_bottom = 118.0
 
 [node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
@@ -78,11 +79,11 @@ text = "START"
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
 margin_top = 122.0
-margin_right = 362.0
+margin_right = 565.0
 margin_bottom = 240.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2"]
-margin_right = 362.0
+margin_right = 565.0
 margin_bottom = 118.0
 
 [node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
@@ -93,6 +94,31 @@ custom_fonts/font = SubResource( 2 )
 text = ">"
 
 [node name="OptionName" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
+margin_left = 56.0
+margin_right = 565.0
+margin_bottom = 118.0
+rect_min_size = Vector2( 306, 118 )
+custom_fonts/font = SubResource( 2 )
+text = "CONTROLS"
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
+margin_top = 244.0
+margin_right = 565.0
+margin_bottom = 362.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3"]
+margin_left = 101.0
+margin_right = 463.0
+margin_bottom = 118.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_right = 52.0
+margin_bottom = 118.0
+rect_min_size = Vector2( 52, 118 )
+custom_fonts/font = SubResource( 2 )
+text = ">"
+
+[node name="OptionName" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
 margin_left = 56.0
 margin_right = 362.0
 margin_bottom = 118.0
